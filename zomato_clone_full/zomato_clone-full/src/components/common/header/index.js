@@ -9,12 +9,14 @@ const Header = () => {
       alt='Zomato-logo' 
       className='header-logo' 
       />
-      <div className='header-left'>
+      <div className='header-right'>
         <div className='header-location-search-container'>
           <div className='location-wrapper'>
             <div className='location-icon-name'>
-              <i className='fas fa-map-marker-alt'></i>
+              <i className='fi fi-rr-marker absolute-center location-icon'></i>
+              <div>Pune</div>
             </div>
+            <i className='fi fi-rr-caret-down absolute-center'></i>
           </div>
         </div>
       </div>

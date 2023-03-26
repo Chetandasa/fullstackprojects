@@ -10,3 +10,38 @@
   max-width: 140px;
   margin-right: 24px;
 }
+
+.header-right {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.header-location-search-container {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: var(--primary-box-shadow);
+  border: 1px solid var(--border-white);
+  width: 70%;
+  background-color: var(--primary-bg);
+}
+
+.location-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.location-icon-name {
+  display: flex;
+  color: var(--zomato-gray);
+}
+
+.location-icon {
+  color: var(--zomato-red);
+}
