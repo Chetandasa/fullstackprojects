@@ -1,0 +1,6 @@
+1. To create a react project  open  terminal and 
+   npx creat-react-app appname.
+2. after all package istall in terminal 
+   npm start. 
+it will run and start the browzer and show the react website running 
+3. 
