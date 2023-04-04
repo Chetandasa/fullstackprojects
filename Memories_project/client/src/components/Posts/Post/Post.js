@@ -7,7 +7,7 @@ import moment from 'moment';
 
 import useStyles from './styles';
 
-const Post = ( post ) => {
+const Post = ({ post }) => {
   const classes = useStyles();
 
   return (
@@ -22,12 +22,12 @@ const Post = ( post ) => {
           <MoreHorizIcon fontSize="default" />
         </Button>
       </div>
-      <div className="classes.details">
+      <div className={classes.details}>
         <Typography variant="body2" color="textSecondary">{post.tags.map((tag) => `#${tag} `)}</Typography>
       </div>
-      <Card>
+      <CardContent>
         <Typography className={classes.title} variant="h5" gutterBottom>{post.message}</Typography>
-      </Card>
+      </CardContent>
       <CardActions className={classes.cardActions}>
         <Button size="small" color="primary" onClick={() => {}}>
           <ThumbUpAltIcon fontSize="small"  />
