@@ -7,13 +7,14 @@ import postRoutes from './routes/posts.js';
 
 const app = express();
 
-app.use('/posts', postRoutes);
-
 app.use(bodyParser.json({ limit: "30mb", extended: true}));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true}));
 app.use(cors());
 
-const CONNECTION_URL = 'mongodb+srv://memoryapplication:memoryapplication28@cluster0.qo33est.mongodb.net/?retryWrites=true&w=majority';
+app.use('/posts', postRoutes);
+
+// const CONNECTION_URL = 'mongodb+srv://memoryapplication:memoryapplication28@cluster0.qo33est.mongodb.net/?retryWrites=true&w=majority';
+const CONNECTION_URL = 'mongodb+srv://memoriesproject:memoriesproject2814@cluster0.rjixjtq.mongodb.net/?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
 
 mongoose
